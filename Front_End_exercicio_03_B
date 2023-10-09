@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <h1>Formulário de Login</h1>
+    
+    <label for="email">Informe seu e-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="senha">Informe sua senha:</label>
+    <input type="password" id="senha" name="senha"><br><br>
+    
+    <button onclick="efetuarLogin()" style="float: left;">Efetuar Login</button>
+    <button onclick="cancelar()" style="float: right;">Cancelar</button>
+    
+    <script>
+        function efetuarLogin() {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+            
+            // Aqui você pode adicionar a lógica do seu código para efetuar o login
+            
+            alert("Login efetuado com sucesso!");
+        }
+        
+        function cancelar() {
+            document.getElementById("email").value = "";
+            document.getElementById("senha").value = "";
+        }
+    </script>
+</body>
+</html>
